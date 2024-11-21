@@ -1,0 +1,103 @@
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Fokus</title>
+
+      <link href="./FokusFiles/CSS/MainPage.css" rel="stylesheet" type="text/css">
+      <link href="./FokusFiles/CSS/TeamBoxed.css" rel="stylesheet" type="text/css">
+      <link href="./FokusFiles/CSS/FokusComponents.css" rel="stylesheet" type="text/css">
+      <link rel="icon" href="./FokusFiles/Images/FokusMain.png" type="image/icon type">
+
+      <script>
+
+      </script>
+   </head>
+   <body>
+      <header class="mainheader">
+         <div class="fatfuck">
+         <div class="maincontainer fatfuck">
+            <div class="logonrefs">
+               <a href= "#"><img src="./FokusFiles/Images/FokusMain.png" alt="" class="fokuslogo"></a>
+               <ul class="refs" style="margin-top: 0px;">
+                  <li class="headeroption">
+                     <a href="./Fokus.html"><span>HOME</span></a>
+                  </li>
+                  <li class="headeroption">
+                     <a href="./Compatibilities.html"><span>COMPATIBILITIES</span></a>
+                  </li>
+                  <li class="headeroption">
+                     <a href="https://discord.gg/pWQBB9TQ6Y"><span>DISCORD</span></a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div class="maincontainer">
+            <div class="submaincontainer">
+               <h1 class="Title">Welcome, To Fokus!</h1>
+               <p class="description" style="width: 50%;">The only official website of Fokus! Join our discord to get updates on the Fokus script!</p>
+                <div class="downloadcontainer">
+                    <div>
+                        <button class="Get-Script-Button" onclick="setClipboard()">Get Script</button>
+                        <script>
+                           function setClipboard() {
+                               const TextToCopy = 'loadstring(game:HttpGet("https://raw.githubusercontent.com/FokusScripts/Fokus/main/FokusLoader.lua", true))()';
+                       
+                               const TempInput = document.createElement('textarea');
+                               TempInput.value = TextToCopy;
+                       
+                               document.body.appendChild(TempInput);
+                       
+                               TempInput.select();
+                               TempInput.setSelectionRange(0, 99999);
+                               document.execCommand('copy');
+                       
+                               document.body.removeChild(TempInput);
+                       
+                               alert("Script copied to clipboard");
+                           }
+                       </script>
+                    </div>
+                </div>
+            </div>
+         </div>
+      </div>
+      </header>
+      <section class="fatfuck mainbody" style="height: 250px;">
+
+         <div style="margin-top: 60px;" align="center">
+            <h2>Credits</h2>
+         </div>
+
+         <div class="row">
+         <div class="desccard creditscard-spacer creditscard">
+            <div class="flexbox">
+               <img class="creditsimg" src="./FokusFiles/Images/pfp.jpg" alt="">
+               <div>
+                  <h3 class="creditsname">3ree</h3>
+                  <p class="creditsstatus">Web, script and bot developer.</p>
+                  <div class="creditssocials">
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="desccard creditscard-spacer creditscard">
+            <div class="flexbox">
+               <img class="creditsimg" src="./FokusFiles/Images/f44bd35365535d9675b0cee147fad734.webp" alt="">
+               <div>
+                  <h3 class="creditsname">Jalolz</h3>
+                  <p class="creditsstatus">Web developer.</p>
+                  <div class="creditssocials">
+                  </div>
+               </div>
+            </div>
+         </div>
+         </div>
+
+         <footer class="copfooter">
+            <div>
+               <p align="center" style="vertical-align: middle;"><a href="https://discord.gg/sbm6P4QZ" style="margin-right: 50px;"><span>Contact Us</span></a>Copyright © Fokus 2024</p>
+            </div>
+         </footer>
+      </section>
+   
+</body></html>
