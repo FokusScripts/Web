@@ -1,0 +1,127 @@
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Fokus</title>
+
+      <link href="./FokusFiles/CSS/MainPage.css" rel="stylesheet" type="text/css">
+      <link href="./FokusFiles/CSS/TeamBoxed.css" rel="stylesheet" type="text/css">
+      <link href="./FokusFiles/CSS/FokusComponents.css" rel="stylesheet" type="text/css">
+      <link rel="icon" href="./FokusFiles/Images/FokusMain.png" type="image/icon type">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+   </head>
+   <body>
+      <header id="home" class="mainheader">
+         <div class="fatfuck">
+         <div class="maincontainer fatfuck">
+            <div class="logonrefs">
+               <a href= ""><img src="./FokusFiles/Images/FokusMain.png" alt="" class="fokuslogo"></a>
+               <ul class="refs" style="margin-top: 0px;">
+                  <li class="headeroption">
+                     <a href=""><span>HOME</span></a>
+                  </li>
+                  <li class="headeroption">
+                     <a href="javascript:void(0)" onclick="document.getElementById('compatibilities').scrollIntoView({ behavior: 'smooth' })">
+                       <span>COMPATIBILITIES</span>
+                     </a>
+                  </li>
+                  <li class="headeroption">
+                    <a href="javascript:void(0)" onclick="document.getElementById('showcase').scrollIntoView({ behavior: 'smooth' })">
+                      <span>SHOW CASE</span>
+                    </a>
+                  </li>
+                  <li class="headeroption">
+                     <a href="https://discord.gg/pWQBB9TQ6Y"><span>DISCORD</span></a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div class="maincontainer">
+            <div class="submaincontainer">
+               <h1 class="Title" id="welcome-title" data-aos="fade-in" data-aos-duration="2000">Welcome, To Fokus!</h1>
+               <p class="description" data-aos="fade-in" data-aos-delay="300" data-aos-duration="3000" style="width: 50%;">The only official website of Fokus! Join our discord to get updates on the Fokus script!</p>
+                <div class="downloadcontainer">
+                    <div>
+                        <button class="Get-Script-Button" data-aos="fade-in" data-aos-delay="300" data-aos-duration="3000" onclick="setClipboard()">Get Script</button>
+                        <script>
+                           function setClipboard() {
+                               const TextToCopy = 'loadstring(game:HttpGet("https://raw.githubusercontent.com/FokusScripts/Fokus/main/FokusLoader.lua", true))()';
+                       
+                               const TempInput = document.createElement('textarea');
+                               TempInput.value = TextToCopy;
+                       
+                               document.body.appendChild(TempInput);
+                       
+                               TempInput.select();
+                               TempInput.setSelectionRange(0, 99999);
+                               document.execCommand('copy');
+                       
+                               document.body.removeChild(TempInput);
+                       
+                               alert("Script copied to clipboard");
+                           }
+                       </script>
+                    </div>
+                </div>
+            </div>
+         </div>
+      </div>
+      </header>
+      <header id="compatibilities" class="c">
+      <section class="fatfuck mainbody" style="height: 650px;">
+         <div style="margin-top: 50px;" align="center">
+            <h2 data-aos="fade-in" data-aos-duration="1000" data-aos-delay="200">Compatibilities</h2>
+            <h2 style="font-size: 16px; background-color: rgb(40, 40, 40); padding: 10px 20px; border-radius: 25px; display: inline-block;" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="200">loadstring(game:HttpGet("https://raw.githubusercontent.com/FokusScripts/Fokus/main/FokusLoader.lua", true))()</h2>
+            <h2 style="font-size: 18px; text-align: left; margin-top: 20px; padding-left: 99px;" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="200">[+] Life Sentence</h2>
+            <h2 style="font-size: 18px; text-align: left; margin-top: -52px; padding-left: 419px;" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="200">[+] Work At A Pizza Place</h2>
+            <h2 style="font-size: 18px; text-align: left; margin-top: -52px; padding-left: 840px;" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="200">[+] Slap Battles</h2>
+            <h2 style="font-size: 18px; text-align: left; margin-top: 90px; padding-left: 99px;" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="200">[+] Blox Burg</h2>
+            <h2 style="font-size: 18px; text-align: left; margin-top: -56px; padding-left: 432px;" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="200">[+] Dragon Ball Rage</h2>
+         </div>
+      </section>  
+      </header>
+      <header id="showcase" class="e">
+         <section class="fatfuck mainbody" style="height: 650px;">
+            <div style="margin-top: 50px;" align="center">
+               <h2 data-aos="fade-in" data-aos-duration="1000" data-aos-delay="200">Show case</h2>
+            </div>
+         </section>  
+         </header>
+      <section class="fatfuck mainbody" style="height: 250px;">
+         <div style="margin-top: 60px;" align="center">
+            <h2 data-aos="fade-in" data-aos-duration="1000" data-aos-delay="200">Credits</h2>
+         </div>
+         <div class="row">
+         <div class="desccard creditscard-spacer creditscard" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="200">
+            <div class="flexbox">
+               <img class="creditsimg" src="./FokusFiles/Images/pfp.jpg" alt="">
+               <div>
+                  <h3 class="creditsname">3ree</h3>
+                  <p class="creditsstatus">Web, script and bot developer.</p>
+                  <div class="creditssocials">
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="desccard creditscard-spacer creditscard" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="200">
+            <div class="flexbox">
+               <img class="creditsimg" src="./FokusFiles/Images/f44bd35365535d9675b0cee147fad734.webp" alt="">
+               <div>
+                  <h3 class="creditsname">Jalolz</h3>
+                  <p class="creditsstatus">Web developer.</p>
+                  <div class="creditssocials">
+                  </div>
+               </div>
+            </div>
+         </div>
+         </div>
+         <footer class="copfooter">
+            <div>
+               <p align="center" style="vertical-align: middle;"><a href="https://discord.gg/sbm6P4QZ" style="margin-right: 50px;"><span>Contact Us</span></a>Copyright © Fokus 2024</p>
+            </div>
+         </footer>
+      </section>
+      <script>
+         AOS.init();
+       </script>       
+</body>
+</html>
